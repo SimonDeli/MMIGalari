@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dessins 2D</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+</head>
+
+<body>
+	<div id="pageDessins">
+		<div class="bande_droite">
+			<div class="menuGauche">
+				<a href="index.html"><div class="retourAccueil autreChoix">
+					<span class="glyphicon glyphicon-home"></span>
+					
+				</div></a>
+				<div class="imgSuivante autreChoix">
+					<span class="glyphicon glyphicon-forward"></span>
+					
+				</div>
+				<div class="imgPrecedente autreChoix">
+					<span class="glyphicon glyphicon-backward"></span>
+					
+				</div>
+				<div class="diapo autreChoix">
+					<span class="glyphicon glyphicon-play"></span>
+					
+				</div>
+				<div class="stopDiapo autreChoix">
+					<span class="glyphicon glyphicon-stop"></span>
+					
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="textMenuGalerie">
+			<div class="textRetourAccueil">
+				Retour page d'accueil
+			</div>
+			<div class="textImgSuivante">
+				Image suivante
+			</div>
+			<div class="textImgPrecedente">
+				Image précédente
+			</div>
+			<div class="textDiapo">
+				Diaporama
+			</div>
+			<div class="textStopDiapo">
+				Stopper le diaporama
+			</div>
+		</div>
+		
+		
+		
+		<div class="decoHoriz">
+			<div class="ligne">
+			</div>
+			<div class="ligne">
+			</div>
+		</div>
+		<div class="decoVerti">
+			<div class="ligne">
+			</div>
+			<div class="ligne">
+			</div>
+		</div>
+		<div id="sousPage">
+			<div class="miniaturesDroite">
+				<img src="images/flecheGalerieHaut.png" class="flecheGalerie flecheHaut">
+				<div class="miniature">
+					<img class="imagesGalerie premiereImage" value = "1" src="images/oeuvres/divers/perrine/miniatures/poeme1.jpg">
+					<img class="imagesGalerie" value = "2" src="images/oeuvres/divers/perrine/miniatures/poeme2.jpg">
+					<img class="imagesGalerie" value = "3" src="images/oeuvres/divers/perrine/miniatures/poeme1.jpg">
+					<img class="imagesGalerie" value = "4" src="images/oeuvres/divers/perrine/miniatures/poeme2.jpg">
+				</div>
+				<img src="images/flecheGalerieBas.png" class="flecheGalerie flecheBas">
+			</div>
+			<div class="photoPrincipale">
+
+				<div class="infos">
+				<h1>Perrine Pirio</h1> 
+				Poème
+				</div>
+				<div id="photo">
+					<img value = "1" src="images/oeuvres/divers/perrine/poeme1.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="menuGauche">
+		<ul>
+			<a href="divers_guillaume.html"><li>Guillaume</li></a>
+			<a href="divers_perrine.html"><li>Perrine</li></a>
+			<a href="divers_timothey.html"><li>Timothey</li></a>
+			<a href="divers_anonyme.html"><li>Anonyme</li></a>
+		</ul>
+	</div>
+	<footer>
+		<span class="chemin"><a href="index.html">Accueil</a> > <a href="divers.html">Divers</a> > <a href="divers_perrine.html">Perrine</a></span><span class="copyright">Simon DELINEAU &amp; Maxime RETAILLEAU</span>
+	</footer>
+</body>
+</html>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/jquery_easing.js"></script>
+<script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+<script>
+		$(document).ready(function(){
+			$.localScroll();
+		}); 
+</script>
+<script src="js/scriptDessins.js"></script>
+<script src="js/scriptTableau.js"></script>
+<script src="js/galeries/pperrine.js"></script>

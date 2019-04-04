@@ -1,0 +1,113 @@
+@font-face{
+	font-family:"MaPolice";
+	src:url(../assets/font/dolceVita.ttf);
+	font-weight:normal;
+}
+html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#canvas {
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+	/*filter:blur(0px);*/
+	transition:filter 0.3s;
+}
+#explication {
+	font-size:3em;
+	color:white;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:1000;
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:100px;
+	font-family:"MaPolice";
+	text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+#explication div:nth-of-type(1) {
+	display:flex;
+	text-align:center;
+	margin-top:100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#explication div span {
+	position:relative;
+	top:70px;
+}
+#finExplication {
+	position:absolute;
+	right:20px;
+	bottom:110px;
+	font-size: initial;
+	font-size:20pt;
+	text-shadow: initial;
+	font-family: initial;
+	font-style: italic;
+	color:black;
+	
+}
+.dessin{
+	opacity:0;
+	visibility: hidden;
+	position:fixed;
+	text-align:center;
+	width:100%;
+	z-index:9999;
+	transition:opacity 0.3s;
+}
+.paysage {
+	top:-10px;
+}
+.portrait{
+	top:-50px;
+}
+
+.dessin > img{
+	box-shadow:0px 0px 50px black;
+}
+.dessin:target {
+	width:100%;
+	opacity:1;
+	visibility: visible;
+}
+.dessin .croix {
+	position:fixed;
+	top:10px;
+	right:10px;
+	transform:scale(0.5);
+}
+.nomPrenom{
+	position:relative;
+	margin-right:auto;
+	margin-left: auto;
+	font-size: 2.5em;
+	font-family: "MaPolice";
+	text-align:center;
+	opacity:0;
+	transition:opacity 0.3s;
+}
+.textPaysage{
+	top:60px;
+}
+.textPortrait {
+	top:100px;
+}
+.textBlanc{
+	color:white;
+}
+.textNoir {
+	color:black;
+}
+.matthieu {
+	right:400px;
+}

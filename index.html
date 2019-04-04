@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MM'Igalari</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+</head>
+
+<body>
+	<div class="menuFixe" id="menuFixe">
+		<div class="subMenuFixe">
+			<div class="MFContact MF">
+				<span class="glyphicon glyphicon-envelope"></span>
+			</div>
+			<div class="MFAPropos MF">
+				<span class="glyphicon glyphicon-question-sign"></span>
+			</div>
+		</div>
+	</div>
+	<div id="page" class="page">
+	<div class="bande_droite">
+		<div class="menuGauche">
+			<div class="contact autreChoix">
+				<span class="glyphicon glyphicon-envelope"></span>
+				<div class="textContact">
+					Contact
+				</div>
+			</div>
+			<div class="aPropos autreChoix">
+				<span class="glyphicon glyphicon-question-sign"></span>
+				<div class="textAPropos">
+					A Propos
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<a href="http://www.mon-compteur.fr" id="compteur"><img src="http://www.mon-compteur.fr/html_c02genv2-61159-2" border="0" />
+	<span>Visiteurs uniques</span>
+	</a>
+	
+	
+		<div class="article">
+			<div id="titre">
+			MM'Igalari
+			</div>
+			<div class="menu">
+				
+				<div class="choix galerie3d">
+					<a href="Galerie3D/index.html">
+						<div class="textMenu">
+								Galerie Virtuelle
+						</div>
+					</a>
+				</div>
+				
+				<a href="#titre2">
+					<div class="afficherPlus" onclick="afficherPlus()" id="afficherPlus">
+						Afficher liens vers la galerie 2D
+					</div>
+				</a>			
+				<div id="titre2">
+					Galerie 2D
+				</div>
+				<div id="subMenu" class="galerie2d">
+					<div class="subMenu">
+						<div class="sousMenu">
+							<div class="choix dessin" >
+								<div class="textMenu" id="choix1">
+									Dessins
+								</div>				
+							</div>
+							<div class="sousChoix">
+								<a href="dessins_gregory.html"><div>Gregory</div></a>
+								<a href="dessins_sophie.html"><div>Sophie</div></a>
+								<a href="dessins_perrine.html"><div>Perrine</div></a>
+								<a href="dessins_clothilde.html"><div>Clothilde</div></a>
+							</div>
+						</div>
+						<div class="sousMenu">
+							<div class="choix musique">
+								<div class="textMenu" id="choix2">
+									Musiques
+								</div>				
+							</div>
+							<div class="sousChoix">
+								<a href=""><div>A Venir</div></a>
+							</div>
+						</div>
+						<div class="sousMenu">
+							<div class="choix photographie">
+								<div class="textMenu" id="choix3">
+									Photographies
+								</div>				
+							</div>
+							<div class="sousChoix">
+								<a href="photos_louise.html"><div>Louise</div></a>
+								<a href="photos_soifia.html"><div>Soifia</div></a>
+							</div>
+						</div>
+						<div class="sousMenu">
+							<div class="choix divers">
+								<div class="textMenu" id="choix4">
+									Divers
+								</div>				
+							</div>
+							<div class="sousChoix">
+								<a href="divers_guillaume.html"><div>Guillaume</div></a>
+								<a href="divers_perrine.html"><div>Perrine</div></a>
+								<a href="divers_timothey.html"><div>Timothey</div></a>
+								<a href="divers_anonyme.html"><div>Anonyme</div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	<div id="contact">
+		
+		<h1>CONTACT</h1>
+		<form action="mailto:simondelineau@gmail.com" method="post" enctype="text/plain">
+			<fieldset>
+				<legend>Nom</legend>
+				<input type="text" name="Nom" placeholder="Nom">
+			</fieldset>
+			<fieldset>
+				<legend>Prénom</legend>
+				<input type="text" name="Prenom" placeholder="Prénom">
+			</fieldset>
+			<fieldset>
+				<legend>Message</legend>
+				<textarea name="Message" rows="8" style="width: 100%" placeholder="Votre message ici .."></textarea>
+			</fieldset>
+			<input type="submit" value="Envoyer" >
+		</form>
+	</div>
+	<div id="APropos">
+		<h1>APropos</h1>
+	</div>
+	<footer>
+		<span class="chemin"><a href="index.html">Accueil</a></span><span class="copyright">Simon DELINEAU &amp; Maxime RETAILLEAU</span>
+	</footer>
+</body>
+</html>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+<script>
+		$(document).ready(function(){
+			$.localScroll();
+		}); 
+</script>
+<script src="js/script.js"></script>

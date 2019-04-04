@@ -1,0 +1,12 @@
+ErrorDocument 400 http://simonmegadeth.pagesperso-orange.fr/400.php
+ErrorDocument 401 http://simonmegadeth.pagesperso-orange.fr/401.php
+ErrorDocument 402 http://simonmegadeth.pagesperso-orange.fr//402.php
+ErrorDocument 403 http://simonmegadeth.pagesperso-orange.fr/403.php
+ErrorDocument 404 http://simonmegadeth.pagesperso-orange.fr/404.php
+ErrorDocument 405 http://simonmegadeth.pagesperso-orange.fr/405.php
+ErrorDocument 500 http://simonmegadeth.pagesperso-orange.fr/500.php
+ErrorDocument 501 http://simonmegadeth.pagesperso-orange.fr/501.php
+ErrorDocument 502 http://simonmegadeth.pagesperso-orange.fr/502.php
+ErrorDocument 503 http://simonmegadeth.pagesperso-orange.fr/503.php
+ErrorDocument 504 http://simonmegadeth.pagesperso-orange.fr/504.php
+ErrorDocument 505 http://simonmegadeth.pagesperso-orange.fr/505.php

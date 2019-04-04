@@ -1,0 +1,2 @@
+exposure -> exposure > -3
+gaussian blur -> 4px

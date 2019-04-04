@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Galerie MMI 3D</title>
+        <meta name="description" content="Just Squares is an Webgl FPS multiplayer game realised with Babylon and Node JS." />
+        <!-- SCRIPTS DE BASE -->
+        <script src="js/babylon.js"></script>
+        <script src="https://code.jquery.com/pep/0.4.1/pep.js"></script>
+        <!-- FEUILLES CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+       <div id="explication">
+			<span>Pour vous déplacer, utilisez les touches suivantes :</span>
+			<div>
+				<img src="assets/images/zqsd.png">
+				<span>Ou bien</span>
+				<img src="assets/images/clavier fleches.png">
+			</div>
+			<div id="finExplication">(Clique, ou appuis sur une touche pour passez les explications)</div>
+   		</div>
+        <canvas id="canvas"></canvas>
+    
+    
+    <!--DESSINS-->
+    <a href="#image1" id="dessin1"></a>
+    <div id="image1" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textBlanc">Gregory Robinet</div>
+    	<img src="assets/oeuvres/dessins/gregory/dessin1.jpg" alt="dessin1" class="oeuvres"/>
+    	<a href="#page" class="croix" id="close"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image2" id="dessin2"></a>
+    <div id="image2" class="dessin portrait">
+    	<div class="nomPrenom textPortrait textBlanc">Gregory Robinet</div>
+    	<img src="assets/oeuvres/dessins/gregory/dessin2.jpg" alt="dessin2" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image3" id="dessin3"></a>
+    <div id="image3" class="dessin paysage">
+   		<div class="nomPrenom textPaysage textBlanc">Gregory Robinet</div>
+    	<img src="assets/oeuvres/dessins/gregory/dessin3.jpg" alt="dessin3" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image4" id="dessin4"></a>
+    <div id="image4" class="dessin portrait">
+   		<div class="nomPrenom textPortrait textBlanc">Gregory Robinet</div>
+    	<img src="assets/oeuvres/dessins/gregory/dessin4.jpg" alt="dessin3" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image5" id="dessin5"></a>
+    <div id="image5" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textBlanc">Gregory Robinet</div>
+    	<img src="assets/oeuvres/dessins/gregory/dessin5.jpg" alt="dessin3" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image6" id="dessin6"></a>
+    <div id="image6" class="dessin portrait">
+    	<div class="nomPrenom textPortrait textBlanc">Sophie Inglebert</div>
+    	<img src="assets/oeuvres/dessins/sophie/dessin1.jpg" alt="dessin3" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image7" id="dessin7"></a>
+    <div id="image7" class="dessin portrait">
+    	<div class="nomPrenom textPaysage textBlanc">Sophie Inglebert</div>
+    	<img src="assets/oeuvres/dessins/sophie/dessin2.jpg" alt="dessin3" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image8" id="dessin8"></a>
+    <div id="image8" class="dessin portrait">
+    	<div class="nomPrenom textPaysage textNoir">Sophie Inglebert</div>
+    	<img src="assets/oeuvres/dessins/sophie/dessin3.jpg" alt="dessin3" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image9" id="dessin9"></a>
+    <div id="image9" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textNoir">Perrine Pirio</div>
+    	<img src="assets/oeuvres/dessins/perrine/dessin1.jpg" alt="dessin3" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image10" id="dessin10"></a>
+    <div id="image10" class="dessin portrait">
+    	<div class="nomPrenom textPortrait textNoir">Clothilde Holzer</div>
+    	<img src="assets/oeuvres/dessins/clothilde/dessin1.jpg" alt="dessin3" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image11" id="dessin11"></a>
+    <div id="image11" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textNoir">Clothilde Holzer</div>
+    	<img src="assets/oeuvres/dessins/clothilde/dessin2.jpg" alt="dessin3" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image12" id="dessin12"></a>
+    <div id="image12" class="dessin portrait">
+    	<div class="nomPrenom textPortrait textNoir">Clothilde Holzer</div>
+    	<img src="assets/oeuvres/dessins/clothilde/dessin3.jpg" alt="dessin3" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image13" id="dessin13"></a>
+    <div id="image13" class="dessin portrait">
+    	<div class="nomPrenom textPortrait textNoir">Clothilde Holzer</div>
+    	<img src="assets/oeuvres/dessins/clothilde/dessin4.jpg" alt="dessin3" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image14" id="dessin14"></a>
+    <div id="image14" class="dessin portrait">
+    	<div class="nomPrenom textPortrait textNoir">Clothilde Holzer</div>
+    	<img src="assets/oeuvres/dessins/clothilde/dessin5.jpg" alt="dessin3" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    
+    
+    
+    
+    
+    <!--DIVERS-->
+    <a href="#image1bis" id="divers1"></a>
+    <div id="image1bis" class="dessin portrait">
+    	<div class="nomPrenom textPaysage textNoir">Perrine Pirio</div>
+    	<img src="assets/oeuvres/divers/perrine/poeme1.jpg" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image2bis" id="divers2"></a>
+    <div id="image2bis" class="dessin portrait">
+    	<div class="nomPrenom textPaysage textNoir">Perrine Pirio</div>
+    	<img src="assets/oeuvres/divers/perrine/poeme2.jpg" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image3bis" id="divers3"></a>
+    <div id="image3bis" class="dessin portrait">
+    	<div class="nomPrenom textPaysage textBlanc">Louise Bothé</div>
+    	<img src="assets/oeuvres/divers/louise/photo1.jpg" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image4bis" id="divers4"></a>
+    <div id="image4bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textBlanc">Louise Bothé</div>
+    	<img src="assets/oeuvres/divers/louise/photo2.jpg" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image5bis" id="divers5"></a>
+    <div id="image5bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textBlanc">Louise Bothé</div>
+    	<img src="assets/oeuvres/divers/louise/photo3.jpg" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image6bis" id="divers6"></a>
+    <div id="image6bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textBlanc">Louise Bothé</div>
+    	<img src="assets/oeuvres/divers/louise/photo4.jpg" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image7bis" id="divers7"></a>
+    <div id="image7bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textNoir">Louise Bothé</div>
+    	<img src="assets/oeuvres/divers/louise/photo5.jpg" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image8bis" id="divers8"></a>
+    <div id="image8bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textNoir">Timothey Plat</div>
+    	<img src="assets/oeuvres/divers/timothey/image1.png" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image9bis" id="divers9"></a>
+    <div id="image9bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textNoir">Timothey Plat</div>
+    	<img src="assets/oeuvres/divers/timothey/image2.png" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image10bis" id="divers10"></a>
+    <div id="image10bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textNoir">Timothey Plat</div>
+    	<img src="assets/oeuvres/divers/timothey/image3.jpg" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image11bis" id="divers11"></a>
+    <div id="image11bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textBlanc">Timothey Plat</div>
+    	<img src="assets/oeuvres/divers/timothey/image4.png" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image12bis" id="divers12"></a>
+    <div id="image12bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textBlanc">Timothey Plat</div>
+    	<img src="assets/oeuvres/divers/timothey/image5.png" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image13bis" id="divers13"></a>
+    <div id="image13bis" class="dessin portrait">
+    	<div class="nomPrenom textPaysage textNoir matthieu">Anonyme</div>
+    	<img src="assets/oeuvres/divers/matthieu/poeme1.JPG" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image14bis" id="divers14"></a>
+    <div id="image14bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textBlanc">Soifia Paris</div>
+    	<img src="assets/oeuvres/divers/soifia/photo1.JPG" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image15bis" id="divers15"></a>
+    <div id="image15bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textNoir">Soifia Paris</div>
+    	<img src="assets/oeuvres/divers/soifia/photo2.JPG" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image16bis" id="divers16"></a>
+    <div id="image16bis" class="dessin portrait">
+    	<div class="nomPrenom textPaysage textBlanc">Soifia Paris</div>
+    	<img src="assets/oeuvres/divers/soifia/photo3.JPG" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image17bis" id="divers17"></a>
+    <div id="image17bis" class="dessin portrait">
+    	<div class="nomPrenom textPaysage textBlanc">Soifia Paris</div>
+    	<img src="assets/oeuvres/divers/soifia/photo4.JPG" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    <a href="#image18bis" id="divers18"></a>
+    <div id="image18bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textNoir">Soifia Paris</div>
+    	<img src="assets/oeuvres/divers/soifia/photo5.JPG" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+
+    
+    
+    <a href="#image19bis" id="divers19"></a>
+    <div id="image19bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textBlanc">Guillaume Posson</div>
+    	<img src="assets/oeuvres/divers/guillaume/image1.png" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+     <a href="#image20bis" id="divers20"></a>
+    <div id="image20bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textBlanc">Guillaume Posson</div>
+    	<img src="assets/oeuvres/divers/guillaume/image2.png" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+     <a href="#image21bis" id="divers21"></a>
+    <div id="image21bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textBlanc">Guillaume Posson</div>
+    	<img src="assets/oeuvres/divers/guillaume/image3.png" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+     <a href="#image22bis" id="divers22"></a>
+    <div id="image22bis" class="dessin paysage">
+    	<div class="nomPrenom textPaysage textBlanc">Guillaume Posson</div>
+    	<img src="assets/oeuvres/divers/guillaume/image4.png" alt="poeme1" class="oeuvres"/>
+    	<a href="#page" class="croix"><img src="assets/images/croix.png" als="close"/></a>
+    </div>
+    
+    </body>
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/Fonctions.js"></script>
+    <script src="js/ActionManager.js"></script>
+    <script src="js/Arena.js"></script>
+    <script src="js/Game.js"></script>
+    <!-- SCRIPTS BABYLON -->
+
+    
+</html>
